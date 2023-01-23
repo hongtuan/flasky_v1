@@ -20,3 +20,16 @@
 # 安装依赖包
 # pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 -r requirements/dev.txt
+
+# 在主库中，可以通过git checkout 切换到各章节代码
+git checkout 5a
+# 切换回来
+git switch -
+# 5a版本，需要安装以下依赖
+flask
+flask-bootstrap
+flask-moment
+flask-wtf
+flask-sqlalchemy
+# 一条命令安装
+pip install flask flask-bootstrap flask-moment flask-wtf flask-sqlalchemy -i https://pypi.tuna.tsinghua.edu.cn/simple
