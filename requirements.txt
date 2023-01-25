@@ -25,15 +25,28 @@
 git checkout 5d
 # 切换回来
 git switch -
+# 恢复代码
+git reset --hard
+git fetch --all
+git fetch --tags
+git reset --hard origin/master
+
 # 5a版本，需要安装以下依赖
+# 7a
 flask
 flask-bootstrap
 flask-moment
 flask-wtf
 flask-sqlalchemy
 flask-migrate
+flask-mail
+# 支持加载环境配置文件，需要安装的包
+python-dotenv
+# 链接MySQL数据，需要安装的包，并且将数据库配置修改为：mysql+pymysql://...
+pymysql
+
 # 一条命令安装
-pip install flask flask-bootstrap flask-moment flask-wtf flask-sqlalchemy flask-migrate -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install flask flask-bootstrap flask-moment flask-wtf flask-sqlalchemy flask-migrate flask-mail -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 # 安装pip_search后，可以方便的查询python模块
 pip_search pip_search
