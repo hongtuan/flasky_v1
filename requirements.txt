@@ -44,6 +44,7 @@ flask-mail
 python-dotenv
 # 链接MySQL数据，需要安装的包，并且将数据库配置修改为：mysql+pymysql://...
 pymysql
+flask-login
 
 # 一条命令安装
 pip install flask flask-bootstrap flask-moment flask-wtf flask-sqlalchemy flask-migrate flask-mail -i https://pypi.tuna.tsinghua.edu.cn/simple

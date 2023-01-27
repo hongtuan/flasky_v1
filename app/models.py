@@ -1,7 +1,7 @@
 from datetime import datetime
 import hashlib
 from werkzeug.security import generate_password_hash, check_password_hash
-from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from itsdangerous import TimedSerializer as Serializer
 from markdown import markdown
 import bleach
 from flask import current_app, request, url_for
